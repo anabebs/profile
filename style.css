@@ -1,0 +1,168 @@
+body {
+  margin: 40px;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Vidaloka", serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+}
+
+
+
+.sidebar {
+  grid-area: sidebar;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+/*  box-shadow: 3px 3px;*/
+  color: black;
+}
+
+.content {
+  grid-area: content;
+  background: url(https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80)center
+    center no-repeat;
+  background-size: cover;
+}
+
+.header {
+
+  grid-area: header;
+  background-color: lightgrey;
+  color: white;
+  text-align: center;
+
+}
+
+.header > ul {
+  color: black;
+  display: flex;
+  margin: 0 auto ;
+
+}
+
+ .header > ul > li {
+    list-style: none;
+    margin: 0 150px 0 0;
+
+  }
+
+
+
+.footer {
+  display: inline;
+  grid-area: footer;
+  background-color: #light-grey;
+  color: black;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+
+}
+
+.footer > a{
+  color:grey;
+}
+
+
+.wrapper {
+
+  width: calc(100vw-120px);
+  height: calc(100vh-80px);
+  display: grid;
+  grid-gap: 10px 60px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px 1fr 80px;
+  background-color: #bae3cd;
+  grid-template-areas:
+    "....... header header"
+    "sidebar content content"
+    "....... footer  footer";
+  padding: 20px;
+  color: #444;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  background-color: rgba(54, 73, 88, 1);
+}
+p {
+  color: grey;
+}
+
+.box {
+
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.sidetext {
+  position: fixed;
+  left: -30px;
+  top: 205px;
+  transform: rotate(90deg);
+}
+
+.wrap {
+  position: relative;
+}
+
+.projects{
+  width: 500px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+#p{
+  color:white;
+}
+
+
+.bottom-second  {
+
+  width: calc(100vw-120px);
+
+  display: grid;
+
+  background-color: #bae3cd;
+
+  padding: 20px;
+  color: #444;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  background-color: lightgrey;
+}
+
+#avatar {
+  background-image: url("./images/profile.jpeg");
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-size:contain;
+
+  margin-top: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
